@@ -4,19 +4,12 @@ The production website for [britishscholars.ae](https://britishscholars.ae).
 
 ## Automatic deployment
 
-The GitHub Actions workflow validates the website and deploys it to the existing
-Netlify site whenever a change is pushed to `main`.
+GitHub Actions validates the website whenever a change is pushed to `main`.
+The connected Netlify project then deploys the validated repository automatically.
 
-Add these two repository secrets under **Settings → Secrets and variables →
-Actions**:
-
-- `NETLIFY_AUTH_TOKEN`: a Netlify personal access token
-- `NETLIFY_SITE_ID`: the API ID of the existing British Scholars Netlify site
-
-Until both secrets are present, validation still runs but the deployment step is
-safely skipped.
+No manual Netlify upload or deployment credentials are required.
 
 ## Updating the website
 
-Edit `index.html` and commit the change to `main`. GitHub Actions will validate
-the required website and SEO files, then publish the new version to Netlify.
+Edit `index.html` and commit the change to `main`. GitHub Actions checks the
+required website and SEO files, and Netlify publishes the new production version.
