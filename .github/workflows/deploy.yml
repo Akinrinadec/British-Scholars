@@ -1,0 +1,81 @@
+name: Deploy British Scholars
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: british-scholars-production
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: Validate website
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out website
+        uses: actions/checkout@v4
+
+      - name: Validate required files
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -s index.html
+          test -s robots.txt
+          test -s sitemap.xml
+          grep -q '<title>' index.html
+          grep -q 'https://britishscholars.ae/' sitemap.xml
+          python3 -c "import xml.etree.ElementTree as ET; ET.parse('sitemap.xml')"
+
+  deploy:
+    name: Deploy to Netlify
+    if: github.event_name != 'pull_request'
+    needs: validate
+    runs-on: ubuntu-latest
+    environment:
+      name: production
+      url: https://britishscholars.ae
+    steps:
+      - name: Check out website
+        uses: actions/checkout@v4
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Check Netlify connection
+        id: netlify
+        shell: bash
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        run: |
+          if [[ -n "$NETLIFY_AUTH_TOKEN" && -n "$NETLIFY_SITE_ID" ]]; then
+            echo "configured=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "configured=false" >> "$GITHUB_OUTPUT"
+            echo "::warning::Add NETLIFY_AUTH_TOKEN and NETLIFY_SITE_ID as repository secrets to activate automatic deployment."
+          fi
+
+      - name: Deploy production website
+        if: steps.netlify.outputs.configured == 'true'
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          NETLIFY_CLI_TELEMETRY_DISABLED: "1"
+        run: >
+          npx --yes netlify-cli@27.0.1 deploy
+          --dir=.
+          --prod
+          --site="$NETLIFY_SITE_ID"
+          --auth="$NETLIFY_AUTH_TOKEN"
+          --message="GitHub Actions deploy $GITHUB_SHA"
