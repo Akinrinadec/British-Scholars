@@ -2,42 +2,68 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://britishscholars.ae/</loc>
+    <lastmod>2026-08-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://britishscholars.ae/ib-tutors-dubai.html</loc>
+    <loc>https://britishscholars.ae/ib-tutors-dubai</loc>
+    <lastmod>2026-08-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://britishscholars.ae/igcse-tutors-dubai.html</loc>
+    <loc>https://britishscholars.ae/igcse-tutors-dubai</loc>
+    <lastmod>2026-08-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://britishscholars.ae/a-level-tutors-dubai.html</loc>
+    <loc>https://britishscholars.ae/a-level-tutors-dubai</loc>
+    <lastmod>2026-08-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://britishscholars.ae/maths-tutors-dubai.html</loc>
+    <loc>https://britishscholars.ae/maths-tutors-dubai</loc>
+    <lastmod>2026-08-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://britishscholars.ae/english-tutors-dubai.html</loc>
+    <loc>https://britishscholars.ae/english-tutors-dubai</loc>
+    <lastmod>2026-08-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://britishscholars.ae/science-tutors-dubai.html</loc>
+    <loc>https://britishscholars.ae/science-tutors-dubai</loc>
+    <lastmod>2026-08-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://britishscholars.ae/how-we-verify-tutors.html</loc>
+    <loc>https://britishscholars.ae/how-we-verify-tutors</loc>
+    <lastmod>2026-08-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://britishscholars.ae/igcse-maths-tutors-dubai</loc>
+    <lastmod>2026-08-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://britishscholars.ae/ib-maths-tutors-dubai</loc>
+    <lastmod>2026-08-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://britishscholars.ae/a-level-chemistry-tutors-dubai</loc>
+    <lastmod>2026-08-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>

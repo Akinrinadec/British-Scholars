@@ -9,3 +9,8 @@
     X-Frame-Options = "SAMEORIGIN"
     Referrer-Policy = "strict-origin-when-cross-origin"
 
+[[headers]]
+  for = "/social-preview.png"
+
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
