@@ -15,6 +15,8 @@ document.addEventListener('click', function (event) {
     eventName = 'whatsapp_click';
   } else if (href.indexOf('tel:') === 0) {
     eventName = 'phone_call_click';
+  } else if (href.indexOf('tutor-safeguarding-checklist-uae.pdf') !== -1) {
+    eventName = 'parent_checklist_download';
   } else if (href.indexOf('tally.so/r/QKOA01') !== -1) {
     eventName = 'parent_enquiry_click';
   } else if (href.indexOf('tally.so/r/D4Axvp') !== -1) {
