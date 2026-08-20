@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="104" viewBox="0 0 420 104" role="img" aria-labelledby="title desc">
+  <title id="title">British Scholars Tutor Network badge</title>
+  <desc id="desc">A navy and yellow badge for active tutors in the British Scholars network</desc>
+  <rect width="420" height="104" rx="12" fill="#071d3a"/>
+  <rect x="1.5" y="1.5" width="417" height="101" rx="10.5" fill="none" stroke="#ffd84d" stroke-width="3"/>
+  <circle cx="55" cy="52" r="31" fill="#ffd84d"/>
+  <path d="M55 27 73 34v15c0 14-7.8 23-18 28-10.2-5-18-14-18-28V34l18-7Z" fill="#071d3a"/>
+  <path d="m45 51 7 7 14-16" fill="none" stroke="#ffd84d" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="100" y="35" fill="#ffd84d" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" letter-spacing="2">ACTIVE MEMBER</text>
+  <text x="100" y="61" fill="#ffffff" font-family="Georgia, 'Times New Roman', serif" font-size="23" font-weight="700">British Scholars</text>
+  <text x="100" y="80" fill="#b8c5d5" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" letter-spacing="1.1">PRIVATE TUTOR NETWORK</text>
+</svg>
+
