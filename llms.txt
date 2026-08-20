@@ -1,0 +1,43 @@
+# British Scholars
+
+> British Scholars is a private tutor network helping families in Dubai and across the UAE find carefully selected British-qualified tutors for GCSE, IGCSE, A Level and International Baccalaureate (IB) support.
+
+British Scholars provides personal tutor matching rather than an open marketplace. Families submit a free enquiry with the subject, curriculum, level, location and preferred tuition format. Tutor qualifications, identity and relevant teaching experience are reviewed before recommendations are made.
+
+## Core pages
+
+- [British Scholars](https://britishscholars.ae/): Main site for British-qualified private tutors in Dubai and the UAE.
+- [IB Tutors in Dubai](https://britishscholars.ae/ib-tutors-dubai): IB MYP and Diploma Programme tutoring support.
+- [IGCSE Tutors in Dubai](https://britishscholars.ae/igcse-tutors-dubai): IGCSE tutoring across core and requested subjects.
+- [A Level Tutors in Dubai](https://britishscholars.ae/a-level-tutors-dubai): A Level subject tuition and exam support.
+- [Maths Tutors in Dubai](https://britishscholars.ae/maths-tutors-dubai): Private maths tuition for British and international curricula.
+- [English Tutors in Dubai](https://britishscholars.ae/english-tutors-dubai): English language and literature tuition.
+- [Science Tutors in Dubai](https://britishscholars.ae/science-tutors-dubai): Biology, Chemistry and Physics tutoring.
+
+## Specialist pages
+
+- [IGCSE Maths Tutors in Dubai](https://britishscholars.ae/igcse-maths-tutors-dubai): Focused IGCSE maths tuition.
+- [IB Maths Tutors in Dubai](https://britishscholars.ae/ib-maths-tutors-dubai): IB maths support for relevant programmes and levels.
+- [A Level Chemistry Tutors in Dubai](https://britishscholars.ae/a-level-chemistry-tutors-dubai): Specialist A Level Chemistry tuition.
+
+## Trust and guidance
+
+- [How We Verify Tutors](https://britishscholars.ae/how-we-verify-tutors): How British Scholars reviews tutor qualifications, identity and teaching experience.
+- [Choosing a Private Tutor in Dubai](https://britishscholars.ae/choosing-a-private-tutor-dubai): Parent guidance on choosing suitable private tuition.
+
+## Contact and enquiries
+
+- Website: https://britishscholars.ae/
+- Parent enquiry: https://tally.so/r/QKOA01
+- Tutor application: https://tally.so/r/D4Axvp
+- WhatsApp: +971 58 512 3370
+- Email: info@britishscholars.ae
+
+## Service area
+
+British Scholars serves families in Dubai and across the United Arab Emirates. Tuition may be requested online, in person, or in a flexible format, subject to tutor availability.
+
+## Optional
+
+- [Sitemap](https://britishscholars.ae/sitemap.xml): Index of important public pages.
+- [robots.txt](https://britishscholars.ae/robots.txt): Crawl access information.
