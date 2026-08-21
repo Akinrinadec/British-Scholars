@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-J1JTTYF161"></script>
+  <script src="site-events.js" defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Parent Enquiry Received | British Scholars</title>
+  <meta name="description" content="Confirmation that British Scholars has received your parent tutor enquiry.">
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="stylesheet" href="service-pages.css">
+  <style>
+    .confirmation{max-width:760px;margin:70px auto;padding:52px 38px;text-align:center;background:#fff;border:1px solid var(--line);box-shadow:0 18px 45px rgba(20,39,66,.08)}
+    .confirmation-mark{width:68px;height:68px;margin:0 auto 24px;display:grid;place-items:center;border-radius:50%;background:var(--yellow);color:var(--navy);font-size:34px;font-weight:900}
+    .confirmation h1{margin:0 0 18px;font:600 clamp(34px,6vw,52px) Georgia;color:var(--navy)}
+    .confirmation p{max-width:620px;margin:0 auto 28px;color:var(--muted);font-size:17px;line-height:1.75}
+    .confirmation-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
+    @media(max-width:600px){.confirmation{margin:36px 16px;padding:40px 22px}.confirmation-actions .button{width:100%}}
+  </style>
+</head>
+<body>
+  <header class="header">
+    <a class="brand" href="index.html"><span class="brand-mark">B</span><span><strong>BRITISH SCHOLARS</strong><small>PRIVATE TUTOR NETWORK</small></span></a>
+    <nav><a href="index.html#tuition">Find a tutor</a><a href="how-we-verify-tutors.html">How we verify</a><a href="choosing-a-private-tutor-dubai.html">Parent guide</a><a href="index.html#why">About</a><a href="https://tally.so/r/D4Axvp">For tutors</a></nav>
+    <a class="button button-small" href="https://tally.so/r/QKOA01">Parent enquiry</a>
+  </header>
+  <main>
+    <section class="confirmation" aria-labelledby="confirmation-title">
+      <div class="confirmation-mark" aria-hidden="true">✓</div>
+      <p class="eyebrow">Enquiry received</p>
+      <h1 id="confirmation-title">Thank you. We’ll review the right match.</h1>
+      <p>Your parent enquiry has been received. We’ll review the subject, curriculum, goals, location and preferred lesson format before contacting you about suitable British-qualified tutors.</p>
+      <div class="confirmation-actions">
+        <a class="button" href="index.html">Return to British Scholars</a>
+        <a class="button button-outline" href="https://wa.me/971585123370">Message us on WhatsApp</a>
+      </div>
+    </section>
+  </main>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var key = "bs_parent_enquiry_submitted";
+      if (sessionStorage.getItem(key)) return;
+      if (typeof gtag === "function") {
+        gtag("event", "parent_enquiry_submitted", {
+          form_name: "Parent Enquiry",
+          submission_method: "tally_redirect",
+          page_path: window.location.pathname
+        });
+        sessionStorage.setItem(key, "1");
+      }
+    });
+  </script>
+</body>
+</html>
