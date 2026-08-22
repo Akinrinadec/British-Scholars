@@ -100,6 +100,8 @@ Facebook: https://www.facebook.com/1161689713687967/
 ## Important public resources
 
 - Homepage: https://britishscholars.ae/
+- Services and resources: https://britishscholars.ae/resources
+- Contact: https://britishscholars.ae/contact-british-scholars
 - Sitemap: https://britishscholars.ae/sitemap.xml
 - robots.txt: https://britishscholars.ae/robots.txt
 - AI site index: https://britishscholars.ae/llms.txt

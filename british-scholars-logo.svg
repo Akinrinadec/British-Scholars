@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">British Scholars logo</title>
+  <desc id="desc">A navy letter B on a yellow circle</desc>
+  <rect width="512" height="512" rx="96" fill="#071d3a"/>
+  <circle cx="256" cy="256" r="164" fill="#ffd84d"/>
+  <text x="256" y="330" fill="#071d3a" font-family="Georgia, 'Times New Roman', serif" font-size="228" font-weight="700" text-anchor="middle">B</text>
+</svg>

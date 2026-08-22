@@ -13,3 +13,12 @@ No manual Netlify upload or deployment credentials are required.
 
 Edit `index.html` and commit the change to `main`. GitHub Actions checks the
 required website and SEO files, and Netlify publishes the new production version.
+
+## SEO validation
+
+Run the same metadata, structured-data, sitemap and internal-link checks used by
+GitHub Actions before opening a pull request:
+
+```bash
+node tools/validate-seo.mjs
+```
