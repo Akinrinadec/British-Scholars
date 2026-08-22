@@ -33,6 +33,9 @@ jobs:
           test -s sitemap.xml
           test -s site-events.js
           test -s social-preview.png
+          test -s british-scholars-logo.svg
+          test -s contact-british-scholars.html
+          test -s resources.html
           test ! -e analytics.js
           grep -q '<title>' index.html
           grep -q 'rel="canonical" href="https://britishscholars.ae/"' index.html
@@ -45,3 +48,4 @@ jobs:
             grep -q 'property="og:image"' "$page"
             grep -q 'name="twitter:card"' "$page"
           done
+          node tools/validate-seo.mjs
