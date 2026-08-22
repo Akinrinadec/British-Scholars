@@ -47,16 +47,19 @@
   </main>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-      var key = "bs_tutor_registration_submitted";
-      if (sessionStorage.getItem(key)) return;
+      var url = new URL(window.location.href);
+      if (url.searchParams.get("submitted") !== "1") return;
+
       if (typeof gtag === "function") {
         gtag("event", "tutor_registration_submitted", {
           form_name: "Tutor Registration",
           submission_method: "tally_redirect",
           page_path: window.location.pathname
         });
-        sessionStorage.setItem(key, "1");
       }
+
+      url.searchParams.delete("submitted");
+      window.history.replaceState({}, "", url.pathname + url.search + url.hash);
     });
   </script>
 </body>
