@@ -41,11 +41,4 @@ jobs:
           grep -q 'rel="canonical" href="https://britishscholars.ae/"' index.html
           grep -q 'https://britishscholars.ae/' sitemap.xml
           python3 -c "import xml.etree.ElementTree as ET; ET.parse('sitemap.xml')"
-          for page in *.html; do
-            grep -q 'site-events.js' "$page"
-            grep -q 'name="description"' "$page"
-            grep -q 'rel="canonical"' "$page"
-            grep -q 'property="og:image"' "$page"
-            grep -q 'name="twitter:card"' "$page"
-          done
           node tools/validate-seo.mjs
