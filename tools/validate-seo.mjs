@@ -32,13 +32,16 @@ for (const file of htmlFiles) {
   const indexable = !robots.includes('noindex');
 
   report(Boolean(title), `${file}: missing title`);
-  report(Boolean(description), `${file}: missing meta description`);
-  report(Boolean(canonical), `${file}: missing canonical URL`);
   report((html.match(/<h1(?:\s|>)/gi) || []).length === 1, `${file}: must contain exactly one H1`);
-  report(html.includes('site-events.js'), `${file}: missing site-events.js`);
-  report(html.includes('property="og:image"'), `${file}: missing Open Graph image`);
-  report(html.includes('name="twitter:card"'), `${file}: missing Twitter card metadata`);
   report(html.includes('rel="icon"'), `${file}: missing favicon declaration`);
+
+  if (indexable) {
+    report(Boolean(description), `${file}: missing meta description`);
+    report(Boolean(canonical), `${file}: missing canonical URL`);
+    report(html.includes('site-events.js'), `${file}: missing site-events.js`);
+    report(html.includes('property="og:image"'), `${file}: missing Open Graph image`);
+    report(html.includes('name="twitter:card"'), `${file}: missing Twitter card metadata`);
+  }
 
   for (const [value, label, collection] of [
     [title, 'title', seenTitles],
@@ -69,7 +72,11 @@ for (const file of htmlFiles) {
   for (const match of html.matchAll(/href="([^"]+)"/gi)) {
     const href = match[1];
     if (/^(?:https?:|mailto:|tel:|#)/i.test(href)) continue;
-    const clean = href.split(/[?#]/)[0];
+    const clean = href.split(/[?#]/)[0].replace(/^\//, '');
+    if (href.startsWith('/') && !clean) {
+      report(fs.existsSync(path.join(root, 'index.html')), `${file}: missing homepage for ${href}`);
+      continue;
+    }
     if (!clean) continue;
     const target = clean.endsWith('.html') || path.extname(clean) ? clean : `${clean}.html`;
     report(fs.existsSync(path.join(root, target)), `${file}: broken local link to ${href}`);

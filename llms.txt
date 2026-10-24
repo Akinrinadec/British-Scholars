@@ -29,6 +29,14 @@ British Scholars provides personal tutor matching rather than an open marketplac
 
 ## Specialist pages
 
+- [Economics Tutors in Dubai](https://britishscholars.ae/economics-tutors-dubai): Personal matching for IGCSE, A Level and IB Economics support.
+- [Business Studies Tutors in Dubai](https://britishscholars.ae/business-studies-tutors-dubai): Course-specific Business support for case studies, calculations, analysis and evaluation.
+- [Computer Science Tutors in Dubai](https://britishscholars.ae/computer-science-tutors-dubai): Syllabus-matched support for theory, algorithms, programming and exam preparation.
+
+- [Exam Preparation Tutors in Dubai](https://britishscholars.ae/exam-preparation-tutors-dubai): Focused support for GCSE, IGCSE, A Level and IB mocks, revision planning, past papers and exam technique.
+- [British Primary Tutors in Dubai](https://britishscholars.ae/primary-tutors-dubai): KS1 and KS2 English, Maths and curriculum support matched to the child’s stage.
+- [IGCSE English Tutors in Dubai](https://britishscholars.ae/igcse-english-tutors-dubai): Course-specific English Language and Literature support.
+
 - [IGCSE Maths Tutors in Dubai](https://britishscholars.ae/igcse-maths-tutors-dubai): Focused IGCSE maths tuition.
 - [IB Maths Tutors in Dubai](https://britishscholars.ae/ib-maths-tutors-dubai): IB maths support for relevant programmes and levels.
 - [A Level Chemistry Tutors in Dubai](https://britishscholars.ae/a-level-chemistry-tutors-dubai): Specialist A Level Chemistry tuition.
@@ -51,3 +59,5 @@ British Scholars serves families in Dubai and across the United Arab Emirates. T
 
 - [Sitemap](https://britishscholars.ae/sitemap.xml): Index of important public pages.
 - [robots.txt](https://britishscholars.ae/robots.txt): Crawl access information.
+
+- [Compare tutor options in Dubai](https://britishscholars.ae/best-tutors-dubai): Parent guide to matching services, tuition centres and independent tutors; curriculum fit, qualifications, costs and progress.
