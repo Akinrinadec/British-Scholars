@@ -72,7 +72,11 @@ for (const file of htmlFiles) {
   for (const match of html.matchAll(/href="([^"]+)"/gi)) {
     const href = match[1];
     if (/^(?:https?:|mailto:|tel:|#)/i.test(href)) continue;
-    const clean = href.split(/[?#]/)[0];
+    const clean = href.split(/[?#]/)[0].replace(/^\//, '');
+    if (href.startsWith('/') && !clean) {
+      report(fs.existsSync(path.join(root, 'index.html')), `${file}: missing homepage for ${href}`);
+      continue;
+    }
     if (!clean) continue;
     const target = clean.endsWith('.html') || path.extname(clean) ? clean : `${clean}.html`;
     report(fs.existsSync(path.join(root, target)), `${file}: broken local link to ${href}`);
