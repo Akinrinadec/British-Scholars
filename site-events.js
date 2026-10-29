@@ -43,6 +43,7 @@ if (staffModeEnabled) {
 
 gtag('config', 'G-J1JTTYF161');
 
+var whatsappNumber = '971585825140';
 var whatsappEnquiryMessage = [
   "Hi British Scholars, I’m looking for a tutor.",
   "",
@@ -58,6 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
   document.querySelectorAll('a[href*="wa.me/"]').forEach(function (link) {
     try {
       var whatsappUrl = new URL(link.href);
+      whatsappUrl.pathname = '/' + whatsappNumber;
       whatsappUrl.searchParams.set('text', whatsappEnquiryMessage);
       link.href = whatsappUrl.toString();
     } catch (error) {
