@@ -43,6 +43,41 @@ if (staffModeEnabled) {
 
 gtag('config', 'G-J1JTTYF161');
 
+var whatsappEnquiryMessage = [
+  "Hi British Scholars, I’m looking for a tutor.",
+  "",
+  "Parent’s name:",
+  "Student’s year group:",
+  "Subject:",
+  "Curriculum:",
+  "Location:",
+  "Lesson preference (online or in-person):"
+].join("\n");
+
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('a[href*="wa.me/"]').forEach(function (link) {
+    try {
+      var whatsappUrl = new URL(link.href);
+      whatsappUrl.searchParams.set('text', whatsappEnquiryMessage);
+      link.href = whatsappUrl.toString();
+    } catch (error) {
+      // Leave the original WhatsApp link in place if the URL cannot be parsed.
+    }
+  });
+
+  document.querySelectorAll('a[href*="tally.so/r/QKOA01"]').forEach(function (link) {
+    try {
+      var formUrl = new URL(link.href);
+      if (!formUrl.searchParams.has('lead_source')) {
+        formUrl.searchParams.set('lead_source', 'website');
+      }
+      link.href = formUrl.toString();
+    } catch (error) {
+      // Leave the original form link in place if the URL cannot be parsed.
+    }
+  });
+});
+
 document.addEventListener('click', function (event) {
   var link = event.target.closest('a[href]');
   if (!link) return;
