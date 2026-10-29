@@ -43,7 +43,7 @@ if (staffModeEnabled) {
 
 gtag('config', 'G-J1JTTYF161');
 
-var whatsappNumber = '971585825140';
+var whatsappNumber = '971585123370';
 var whatsappEnquiryMessage = [
   "Hi British Scholars, I’m looking for a tutor.",
   "",
