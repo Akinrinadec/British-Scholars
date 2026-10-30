@@ -43,6 +43,25 @@ if (staffModeEnabled) {
 
 gtag('config', 'G-J1JTTYF161');
 
+var aiReferralSource = '';
+try {
+  var referralHost = document.referrer ? new URL(document.referrer).hostname.toLowerCase() : '';
+  var campaignSource = new URLSearchParams(window.location.search).get('utm_source') || '';
+  var aiSources = ['chatgpt.com', 'perplexity.ai', 'copilot.microsoft.com', 'gemini.google.com', 'claude.ai'];
+  aiReferralSource = aiSources.find(function (source) {
+    return referralHost === source || referralHost.endsWith('.' + source) || campaignSource.toLowerCase() === source;
+  }) || '';
+} catch (error) {
+  // Referral detection should never interrupt the page.
+}
+
+if (aiReferralSource) {
+  gtag('event', 'ai_referral_visit', {
+    ai_source: aiReferralSource,
+    page_path: window.location.pathname
+  });
+}
+
 var whatsappNumber = '971585123370';
 var whatsappEnquiryMessage = [
   "Hi British Scholars, I’m looking for a tutor.",
