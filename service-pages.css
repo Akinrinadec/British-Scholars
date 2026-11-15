@@ -38,6 +38,7 @@ h3{color:var(--navy)}
 .content-card span{color:var(--blue);font-size:11px;font-weight:800;letter-spacing:.12em}
 .content-card h3{margin:28px 0 10px;font:600 24px Inter,"Helvetica Neue",Arial,sans-serif}
 .content-card p{margin:0;color:var(--muted);font-size:14px;line-height:1.75}
+.content-card blockquote{margin:0;color:var(--ink);font-size:15px;line-height:1.8}
 .content-card[href]{display:block;transition:.2s}
 .content-card[href]:hover{background:var(--cream);transform:translateY(-2px)}
 .card-action{margin-top:24px!important;color:var(--blue)!important;font-weight:800}
